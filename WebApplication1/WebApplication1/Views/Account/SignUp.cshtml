@@ -1,0 +1,68 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Create A New Account";
+}
+
+<div class="Title">Create A New Account</div>
+<div class="d-flex justify-content-center">
+    <form asp-action="SignUp" enctype="multipart/form-data" method="post" class="col-10 col-xl-6 mx-5" novalidate>
+        <div class="validation-summary" asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="mb-3">
+            <label asp-for="FirstName" class="form-label">First Name*</label>
+            <input asp-for="FirstName" class="form-control" onkeyup="validateText(event)" id="FirstName" />
+            <small><span asp-validation-for="FirstName" class="text-danger" data-valmsg-for="FirstName"></span></small>
+        </div>
+        <div class="mb-3">
+            <label asp-for="LastName" class="form-label">Last Name*</label>
+            <input asp-for="LastName" class="form-control" onkeyup="validateText(event)" id="LastName" />
+            <small><span asp-validation-for="LastName" class="text-danger" data-valmsg-for="LastName"></span></small>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Address" class="form-label">Address</label>
+            <input asp-for="Address" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="PostalCode" class="form-label">Postal Code</label>
+            <input asp-for="PostalCode" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="City" class="form-label">City</label>
+            <input asp-for="City" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+            <input asp-for="PhoneNumber" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="CompanyName" class="form-label">Company Name</label>
+            <input asp-for="CompanyName" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label">Email Address*</label>
+            <input asp-for="Email" class="form-control" onkeyup="validateEmail(event)" id="Email" />
+            <small><span asp-validation-for="Email" class="text-danger" data-valmsg-for="Email"></span></small>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Password" class="form-label">Password*</label>
+            <input asp-for="Password" class="form-control" onkeyup="validatePassword(event)" id="Password" />
+            <small><span asp-validation-for="Password" class="text-danger" data-valmsg-for="Password"></span></small>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ConfirmPassword" class="form-label">Confirm Password*</label>
+            <input asp-for="ConfirmPassword" class="form-control" />
+            <small class="text-danger"><span asp-validation-for="ConfirmPassword"></span></small>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ImgFile" class="form-label">Upload Your Image</label>
+            <input asp-for="ImgFile" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <input asp-for="TermsAndAgreements" type="checkbox" />
+            <label asp-for="TermsAndAgreements">I have read and accepted the terms and conditions</label>
+            <small class="text-danger"><span asp-validation-for="TermsAndAgreements"></span></small>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-success my-2" type="submit">SIGN UP NOW</button>
+        </div>
+    </form>
+</div>

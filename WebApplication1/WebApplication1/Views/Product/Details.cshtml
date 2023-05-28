@@ -1,0 +1,29 @@
+﻿@model string
+@inject ProductRepo _repo
+@{
+    var product = await _repo.GetAsync(x => x.ArticleNumber == Model);
+    
+}
+
+@if (product != null)
+{
+    ViewData["Title"] = product.ArticleTitle;
+    <div>
+        <div>@product.ArticleNumber</div>
+        <div><img src="./ProductImages/@product.ArticleImg" alt="@product.ArticleTitle" height="400" width="350" /></div>
+        <div>@product.ArticleTitle</div>
+        <div>@product.Description</div>
+        <div>@product.Price$</div>
+        <div>
+            @foreach (var tag in product.ProductTags)
+            {
+                <span class="me-2">@tag.Tag.Title</span>
+            }
+        </div>
+    </div>
+}
+else
+{
+    ViewData["Title"] = "Not Found";
+    <div>No product found</div>
+}

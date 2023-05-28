@@ -1,0 +1,421 @@
+﻿.HeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-top: 5px;
+}
+.HeaderContainer .NavBar a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+}
+.HeaderContainer .NavBar a:hover {
+  color: red;
+  transition: 0.3s;
+}
+
+.ContactContainer .GrayBar {
+  width: 100%;
+}
+.ContactContainer .GrayBarImg {
+  width: 100%;
+}
+.ContactContainer .ContactForm {
+  margin-top: 30px;
+}
+.ContactContainer .ContactForm textarea {
+  height: 150px;
+}
+.ContactContainer .Contactsbtn {
+  border: none;
+  background-color: #FA3150;
+  color: white;
+  width: 120px;
+  height: 50px;
+  font-size: small;
+}
+.ContactContainer .Contactsbtn .Contactsbt:hover {
+  background-color: black;
+  transition: 0.3s;
+}
+.ContactContainer .Map {
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.ContactContainer .Map iframe {
+  width: 100%;
+}
+
+.LoginContainer {
+  margin-top: 10%;
+}
+.LoginContainer .SignupLink a {
+  text-decoration: none;
+  color: rebeccapurple;
+}
+
+.BannerCintainer {
+  position: relative;
+  top: 30px;
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  background-color: #F3F2F2;
+}
+.BannerCintainer .BannerBar {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.BannerCintainer .BannerBar .TextPart {
+  position: relative;
+  top: 100px;
+  left: 300px;
+  width: 50%;
+}
+.BannerCintainer .BannerBar .TextPart p {
+  font-size: small;
+  font-weight: 100;
+  color: #292929;
+}
+.BannerCintainer .BannerBar .TextPart h2 {
+  font-weight: 700;
+}
+.BannerCintainer .BannerBar .ImgPart {
+  position: relative;
+}
+.BannerCintainer .BannerBar .ImgPart .BannerImg {
+  height: 420px;
+  width: 700px;
+  position: relative;
+  bottom: 30px;
+  left: 220px;
+}
+.BannerCintainer .BannerBar .ShopNowbtn {
+  border: none;
+  background-color: #FA3150;
+  color: white;
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  font-size: small;
+}
+.BannerCintainer .BannerBar .ShopNowbtn .ShopNowbtn:hover {
+  background-color: black;
+  transition: 0.3s;
+}
+
+.ContactContainer .GrayBar {
+  width: 100%;
+}
+.ContactContainer .GrayBarImg {
+  width: 100%;
+}
+.ContactContainer .ContactForm {
+  margin-top: 30px;
+}
+.ContactContainer .ContactForm textarea {
+  height: 150px;
+}
+.ContactContainer .Contactsbt {
+  border: none;
+  background-color: #FA3150;
+  color: white;
+  width: 120px;
+  height: 50px;
+  font-size: small;
+}
+.ContactContainer .Contactsbt .Contactsbt:hover {
+  background-color: black;
+  transition: 0.3s;
+}
+.ContactContainer .Map {
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.ContactContainer .Map iframe {
+  width: 100%;
+}
+
+.BestCollection {
+  margin-top: 80px;
+  margin-left: 38%;
+}
+
+.AllCategories {
+  margin-top: 30px;
+  margin-left: 28%;
+  font-weight: 100;
+}
+
+.ProductGrid {
+  position: relative;
+  left: 21%;
+  top: 25px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 30px;
+}
+
+#productImg {
+  width: 180px;
+  height: 160px;
+}
+
+.Card {
+  width: 180px;
+  height: 200px;
+}
+.Card #specification {
+  position: relative;
+  left: 18px;
+  width: 100%;
+}
+.Card #name {
+  font-size: 15px;
+  font-weight: 200;
+}
+.Card #price {
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: -20px;
+}
+.Card #cardCart {
+  position: absolute;
+  right: 50px;
+  bottom: 0.1px;
+}
+.Card #cardCart a {
+  text-decoration: none;
+  color: black;
+  visibility: hidden;
+}
+
+.Card:hover #cardCart a {
+  visibility: visible;
+  animation: ease-in-out;
+  transition: 1s;
+}
+
+.LoadBtn {
+  margin-top: 100px;
+  margin-left: 42%;
+  background-color: white;
+  width: 180px;
+  height: 40px;
+  border-width: thin;
+}
+
+.SaleGrid {
+  width: 100%;
+  height: 600px;
+  background-color: #FAEFEF;
+  margin-top: 50px;
+  position: relative;
+}
+.SaleGrid .SubSaleGrid {
+  width: 75%;
+  height: 80%;
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.SaleGrid .SubSaleGrid div {
+  width: 380px;
+}
+.SaleGrid #productImg {
+  width: 380px;
+  height: 400px;
+  object-fit: cover;
+}
+.SaleGrid .CardSpicification {
+  width: 100%;
+  background-color: white;
+}
+.SaleGrid .CardSpicification p {
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+.SaleGrid .CardSpicification .PriceFlex {
+  display: flex;
+  flex-direction: row;
+  color: #636363;
+}
+.SaleGrid .CardSpicification .PriceFlex .OldPrice {
+  font-size: 18px;
+  text-align: center;
+}
+.SaleGrid .CardSpicification .PriceFlex .SaleCart a {
+  text-decoration: none;
+  color: #636363;
+}
+
+.UpToSell {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 510px;
+}
+.UpToSell #p1 {
+  color: red;
+  font-size: 35px;
+}
+.UpToSell #p2 {
+  font-size: 60px;
+  font-weight: 500;
+  margin-top: -20px;
+}
+.UpToSell #p3 {
+  font-size: 30px;
+}
+.UpToSell #p4 {
+  font-size: 20px;
+}
+.UpToSell a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.TopSelling {
+  justify-content: center;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.TopSellingFlex {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+.ExploreBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.ExploreBtn button {
+  border-width: 1px;
+  margin-left: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.LastBar {
+  width: 73%;
+  height: 500px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.LastBar div {
+  margin-top: 25px;
+  margin-left: 10px;
+  width: 400px;
+  height: 500px;
+}
+.LastBar #postBy {
+  color: #B0B0B0;
+}
+
+.SubscribeContainer {
+  width: 100%;
+  height: 300px;
+  background-image: url(../Images/1920x300.svg);
+  margin-top: 30px;
+  position: relative;
+}
+.SubscribeContainer .SubSubscribe {
+  width: 900px;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  left: 21%;
+  top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.SubscribeContainer .SubSubscribe .This {
+  border: solid;
+  border-width: 0.5px;
+  border-radius: 70px;
+}
+.SubscribeContainer .SubSubscribe .SubscribeTxt {
+  border: none;
+  height: 40px;
+  width: 300px;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 70px;
+}
+.SubscribeContainer .SubSubscribe .SubscribeBtn {
+  background-color: #FA3150;
+  border-radius: 25px;
+  border: none;
+  width: 250px;
+  height: 40px;
+  color: white;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 60px;
+}
+.SubscribeContainer .SubSubscribe .SubscribeBtn hover {
+  background-color: #0E153D;
+}
+
+.Footer {
+  background-color: #292929;
+  width: 100%;
+  height: 20px;
+  position: fixed;
+  bottom: 0;
+}
+.Footer p {
+  color: white;
+  text-align: center;
+}
+
+.Title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.validation-summary {
+  margin: 10px 0;
+}
+.validation-summary ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font-size: 15px;
+}

@@ -1,0 +1,51 @@
+﻿@model ContactViewModel
+@{
+    ViewData["Title"] = "Contact us";
+}
+
+<div class="ContactContainer">
+    <div class="GrayBar">
+        <img class="GrayBarImg" src="../Images/1920x300.svg" />
+    </div>
+    <div class="Title">WRITE MESSAGE TO US</div>
+    <div class="ContactForm d-flex justify-content-center">
+        <form asp-action="Index" method="post" class="col-10 col-xl-6 mx-5">
+            <div validation-summary asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label">Name*</label>
+                <input asp-for="Name" class="form-control" onkeyup="validateText(event)" id="Name" />
+                <small><span class="text-danger" asp-validation-for="Name" data-valmsg-for="Name"></span></small>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label">Email*</label>
+                <input asp-for="Email" class="form-control" onkeyup="validateEmail(event)" id="Email" type="email" />
+                <small><span asp-validation-for="Email" class="text-danger" data-valmsg-for="Email"></span></small>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Phone Number (Optional)</label>
+                <input class="form-control" />
+                <small><span class="text-danger"></span></small>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Company (Optional)</label>
+                <input class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Message" class="form-label">Message*</label>
+                <textarea asp-for="Message" class="form-control" onkeyup="validateText(event)" id="Message" data-val="true" data-val-required="The Email field is required"></textarea>
+                <small><span asp-validation-for="Message" class="text-danger field-validation-valid" data-valmsg-for="Message" data-valmsg-replace="tru"></span></small>
+            </div>
+            <div class="class=" mb-3"">
+                <label class="custom-checkbox">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                    Save my name, email in the this browser for the next time I comment.
+                </label>
+            </div>
+            <button class="Contactsbtn my-2" type="submit">SUBMIT</button>
+        </form>
+    </div>
+    <div class="Map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4464698.944826264!2d5.545349121093734!3d56.87974954514198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46572375ef97a263%3A0x463e65112fbbf5cc!2sEC%20Utbildning%20AB!5e0!3m2!1sen!2sse!4v1684064487940!5m2!1sen!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>

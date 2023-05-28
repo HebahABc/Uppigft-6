@@ -1,0 +1,7 @@
+Jag ville bara säga att jag inte lyckades inte med att få allt gjort. Jag ska kort förklara några anteckningar:
+
+1. Jag fokuserade inte på designen på grund av tidsbrist, bara hemsidan var som en malldesign 
+
+2. ProduktDetails sidan öppnar inte, även om url-sökväg ändras till Detailssidan. Jag följt stegen men den fungerar fortfarande inte
+
+3. Den första användaren som registreras i systemet är administratören, men jag vet inte varför administrationssidan inte visas vid inloggning, så jag ställer in tillståndet som en kommentar för att länken ska dyka upp

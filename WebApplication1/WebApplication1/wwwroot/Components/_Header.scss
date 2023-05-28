@@ -1,0 +1,20 @@
+.HeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+
+    .NavBar {
+        a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: red;
+            transition: 0.3s;
+        }
+    }
+}

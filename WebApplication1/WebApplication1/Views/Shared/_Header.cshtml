@@ -1,0 +1,33 @@
+﻿<header>
+    <div class="HeaderContainer">
+        <a asp-action="Index" asp-controller="Home" class="logo"><img src="../Images/logo.svg" alt="bmerketo"></a>
+        <div class="NavBar">
+            <nav id="menu" class="menu-links">
+                <a class="link" asp-action="index" asp-controller="Home">HOME</a>
+                <a class="link" asp-action="index" asp-controller="Product">PRODUCTS</a>
+                <a class="Link" asp-action="Index" asp-controller="Contact">CONTACT</a>
+                <a class="link" asp-action="index" asp-controller="Home"><i class="bi bi-search" style="font-size: 18px;"></i></a>
+                @if (signInManager.IsSignedIn(User))
+                {
+                    <a class="link me-5" asp-action="index" asp-controller="Home"><i class="bi bi-cart3" style="font-size: 20px;"></i></a>
+                    <a class="Link" asp-action="Index" asp-controller="Account"><b>@User.FindFirst("DisplayName")?.Value</b></a>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="Admin" asp-action="Index" asp-controller="Admin">ADMIN</a>
+                    }
+                    <a class="LogOut" asp-action="SignOutAccount" asp-controller="Account">LOGOUT</a>
+                }
+                else
+                {
+                    <a class="LogIn" asp-action="SignIn" asp-controller="Account">LOGIN</a>
+                    <a class="link" asp-action="index" asp-controller="Home"><i class="bi bi-cart3" style="font-size: 20px;"></i></a>
+                }
+
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+

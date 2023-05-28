@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "ADMIN - DASHBORD";
+}
+
+@inject AdminServices _adminServices
+
+<div>
+    @foreach (var user in await _adminServices.GetUserAsync())
+    {
+        <div class="mb-5">
+            <div><b>@user.FirstName @user.LastName (@user.Email) </b></div>
+            <div>
+                @foreach (var roll in user.RoleName)
+                {
+                    <div> Roll: @roll </div>
+                }
+            </div>
+        </div>
+    }
+</div>
+<br />
+<a class="link" asp-action="AddProduct" asp-controller="Product">ADD PRODUCT</a>

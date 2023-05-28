@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Products";
+}
+@inject ProductRepo _productRepo
+
+<div class="Container mt-5" >
+    @foreach( var product in await _productRepo.GetAllAsync())
+    {
+        <div class="ProductCard mb-3" >
+            <div class="Card-Body">
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="./ProductImages/@product.ArticleImg" alt="@product.ArticleTitle" height="200" width="150" />
+                    <div class="Content ms-2">
+                        <a asp-action="Details" asp-controller="Product" asp-route-id="@product.ArticleNumber">
+                            <div>@product.ArticleTitle</div>
+                        </a>
+                        <div>@product.Price $</div>
+                        <div>
+                            @foreach(var tag in product.ProductTags)
+                            {
+                                <span class="me-2">@tag.Tag.Title</span>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

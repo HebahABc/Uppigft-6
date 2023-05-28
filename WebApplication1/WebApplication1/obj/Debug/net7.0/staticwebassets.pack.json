@@ -1,0 +1,105 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebApplication1.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\Components\\_Contact.scss",
+      "PackagePath": "staticwebassets\\Components\\_Contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\Components\\_Footer.scss",
+      "PackagePath": "staticwebassets\\Components\\_Footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\Components\\_Header.scss",
+      "PackagePath": "staticwebassets\\Components\\_Header.scss"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\Components\\_Home.scss",
+      "PackagePath": "staticwebassets\\Components\\_Home.scss"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\Components\\_LogIn.scss",
+      "PackagePath": "staticwebassets\\Components\\_LogIn.scss"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\Images\\120x113.svg",
+      "PackagePath": "staticwebassets\\Images\\120x113.svg"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\Images\\1920x300.svg",
+      "PackagePath": "staticwebassets\\Images\\1920x300.svg"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\Images\\200x122.svg",
+      "PackagePath": "staticwebassets\\Images\\200x122.svg"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\Images\\270x295.svg",
+      "PackagePath": "staticwebassets\\Images\\270x295.svg"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\Images\\369x310.svg",
+      "PackagePath": "staticwebassets\\Images\\369x310.svg"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\Images\\370x295.svg",
+      "PackagePath": "staticwebassets\\Images\\370x295.svg"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\Images\\469x356.svg",
+      "PackagePath": "staticwebassets\\Images\\469x356.svg"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\Images\\501x430.svg",
+      "PackagePath": "staticwebassets\\Images\\501x430.svg"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\Images\\625x647.svg",
+      "PackagePath": "staticwebassets\\Images\\625x647.svg"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\Images\\Logo.svg",
+      "PackagePath": "staticwebassets\\Images\\Logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\ProductImages\\A1B2C3_WhiteDress.webp",
+      "PackagePath": "staticwebassets\\ProductImages\\A1B2C3_WhiteDress.webp"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\css\\Site.css",
+      "PackagePath": "staticwebassets\\css\\Site.css"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\css\\Site.min.css",
+      "PackagePath": "staticwebassets\\css\\Site.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\css\\Site.scss",
+      "PackagePath": "staticwebassets\\css\\Site.scss"
+    },
+    {
+      "Id": "C:\\Users\\hebah\\OneDrive\\سطح المكتب\\Uppgift6\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WebApplication1.props",
+      "PackagePath": "build\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApplication1.props",
+      "PackagePath": "buildMultiTargeting\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WebApplication1.props",
+      "PackagePath": "buildTransitive\\WebApplication1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

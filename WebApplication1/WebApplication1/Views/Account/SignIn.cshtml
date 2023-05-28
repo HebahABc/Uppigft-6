@@ -1,0 +1,36 @@
+﻿@model SignInViewModel
+@{
+    ViewData["Title"] = "Login To Your Account";
+}
+
+<div class="Title">Login To Your Account</div>
+<div class="LoginContainer">
+    <div class="LoginForm d-flex justify-content-center">
+        <form asp-action="SignIn" method="post" class="col-10 col-xl-6 mx-5" novalidate>
+            <div validation-summary asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label">Email Address</label>
+                <input asp-for="Email" class="form-control" onkeyup="validateEmail(event)" id="Email" />
+                <small><span asp-validation-for="Email" class="text-danger" data-valmsg-for="Email"></span></small>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label">Password</label>
+                <input asp-for="Password"  class="form-control" onkeyup="validatePassword(event)" id="Passowrd" />
+                <small><span asp-validation-for="Password" class="text-danger" data-valmsg-for="Password"></span></small>
+            </div>
+            <div class="mb-3">
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Remember Me
+                </label>
+            </div>
+            <div class="d-grid mb-3">
+                <button class="btn btn-success my-2" type="submit">LOG IN</button>
+            </div>
+        </form>
+    </div>
+    <div class="SignupLink d-flex justify-content-center">
+        <p>Don't have an account?<a class="m-4" asp-controller="Account" asp-action="SignUp">Sign Up Now</a></p>
+    </div>
+</div>

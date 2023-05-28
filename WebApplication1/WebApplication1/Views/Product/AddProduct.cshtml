@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Add Product";
+}
+@model ProductViewModel
+
+
+<div class="Title">Register A New Article</div>
+<div class="d-flex justify-content-center">
+    <form asp-action="AddProduct" enctype="multipart/form-data" method="post" class="col-10 col-xl-6 mx-10" novalidate>
+        <div class="validation-summary" asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="mb-3">
+            <label asp-for="ArticleNumber" class="form-label">Article Number*</label>
+            <input asp-for="ArticleNumber" class="form-control" />
+            <small><span asp-validation-for="ArticleTitle" class="text-danger"></span></small>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ArticleTitle" class="form-label">Article Title*</label>
+            <input asp-for="ArticleTitle" class="form-control" />
+            <small><span asp-validation-for="ArticleTitle" class="text-danger"></span></small>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label">Article Description</label>
+            <input asp-for="Description" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="ArticleCategory" class="form-label">Article Category*</label>
+            <input asp-for="ArticleCategory" class="form-control" />
+            <small><span asp-validation-for="ArticleCategory" class="text-danger"></span></small>
+        </div>
+        <div class="mb-3">
+            <label asp-for="AvilableQuantity" class="form-label">Avilable Quantity*</label>
+            <input asp-for="AvilableQuantity" class="form-control" />
+            <small><span asp-validation-for="AvilableQuantity" class="text-danger"></span></small>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Price" class="form-label">Article Price*</label>
+            <input asp-for="Price" class="form-control" />
+            <small><span asp-validation-for="Price" class="text-danger"></span></small>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ImgFile" class="form-label">Article Photo*</label>
+            <input asp-for="ImgFile" class="form-control" />
+            <small><span asp-validation-for="ImgFile" class="text-danger"></span></small>
+        </div>
+        <div class="mb-3">
+            <p>Choose Product Tags</p>
+            @foreach (SelectListItem tag in ViewBag.Tags)
+            {
+                <div>                    
+                    <input type="checkbox" name="Tags" id="tag-@tag.Text-@tag.Value" value="@tag.Value" checked="@tag.Selected" class="form-check-input" />
+                    <label for="@tag.Value" class="form-check-label"><b>@tag.Text</b></label>
+                </div>
+            }
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-success my-2" type="submit">REGISTER THE ARTICLE</button>
+        </div>
+
+    </form>
+</div>
